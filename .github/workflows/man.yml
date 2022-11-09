@@ -25,7 +25,7 @@ jobs:
       env:
         USER: ${{secrets.DOCKERHUB_UNAME}}
       run: |
-        docker image tag reverseproxy $USER/reverseproxy
+        docker image tag udagram-reverseproxy $USER/udagram-reverseproxy
         docker push $USER/reverseproxy
         docker image tag udagram-frontend:local $USER/udagram-frontend
         docker push $USER/udagram-frontend
