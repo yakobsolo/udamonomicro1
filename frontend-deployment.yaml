@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: frontend
-          image: mubadocker/udagram-frontend
+          image: jacoba4/udagram-frontend
           imagePullPolicy: Always
           ports:
             - containerPort: 80

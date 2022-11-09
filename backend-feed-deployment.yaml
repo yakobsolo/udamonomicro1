@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: backend-feed
-          image: mubadocker/udagram-api-feed
+          image: jacoba4/udagram-api-feed
           imagePullPolicy: Always
           ports:
             - containerPort: 8080
