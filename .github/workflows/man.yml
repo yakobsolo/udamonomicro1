@@ -27,8 +27,8 @@ jobs:
       run: |
         docker image tag reverseproxy $USER/reverseproxy
         docker push $USER/reverseproxy
-        docker image tag udagram-frontend:local $USER/udagram-frontend
-        docker push $USER/udagram-frontend
+        docker image tag udagram-frontend:local $USER/udagram-frontend:v2a
+        docker push $USER/udagram-frontend:v2a
         docker image tag udagram-api-user $USER/udagram-api-user
         docker push $USER/udagram-api-user
         docker image tag udagram-api-feed $USER/udagram-api-feed
