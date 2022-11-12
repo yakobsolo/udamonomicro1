@@ -44,3 +44,6 @@ set_env.sh
 configurations/aws-secret.yaml
 configurations/env-configmap.yaml
 configurations/env-secret.yaml
+configurations/backend-user-service.yaml
+configurations/frontend-service.yaml
+configurations/reverseproxy-service.yaml
