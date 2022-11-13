@@ -1,4 +1,4 @@
-name: Docker feed Image CI
+name: Docker user Image CI
 
 on:
     push:
@@ -25,9 +25,9 @@ jobs:
         - name: Build and push
           uses: docker/build-push-action@v2
           with:
-            context: ./udagram-api-feed
-            file: ./udagram-api-feed/Dockerfile
+            context: ./udagram-api-user
+            file: ./udagram-api-user/Dockerfile
             push: true
-            tags: ${{ secrets.DOCKERHUB_UNAME }}/udagram-api-feed-two:v1
-            cache-from: type=registry,ref=${{ secrets.DOCKERHUB_UNAME }}/udagram_api_feed-two:buildcache
-            cache-to: type=registry,ref=${{ secrets.DOCKERHUB_UNAME }}/udagram-api-feed-two:buildcache,mode=max
+            tags: ${{ secrets.DOCKERHUB_UNAME }}/udagram-api-user-two:v1
+            cache-from: type=registry,ref=${{ secrets.DOCKERHUB_UNAME }}/udagram_api_user-two:buildcache
+            cache-to: type=registry,ref=${{ secrets.DOCKERHUB_UNAME }}/udagram-api-user-two:buildcache,mode=max
