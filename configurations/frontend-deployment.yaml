@@ -16,14 +16,14 @@ spec:
     spec:
       containers:
         - name: frontend
-          image: jacoba4/udagram-frontend:v2a
+          image: jacoba4/udagram-frontend
           imagePullPolicy: Always
           ports:
             - containerPort: 8080
           resources:
             requests:
               memory: "128Mi"
-              cpu: 500m
+              cpu: 250m
             limits:
               memory: "2048Mi"
               cpu: 1000m
