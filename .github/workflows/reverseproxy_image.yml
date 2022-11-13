@@ -26,7 +26,7 @@ jobs:
           uses: docker/build-push-action@v2
           with:
             context: ./udagram-reverseproxy
-            file: ./udagram-reverseproxy/dockerfile
+            file: ./udagram-reverseproxy/Dockerfile
             push: true
             tags: ${{ secrets.DOCKERHUB_UNAME }}/reverseproxy-two:v1
             cache-from: type=registry,ref=${{ secrets.DOCKERHUB_UNAME }}/reverseproxy-two:buildcache

@@ -26,7 +26,7 @@ jobs:
           uses: docker/build-push-action@v2
           with:
             context: ./udagram-api-feed
-            file: ./udagram-api-feed/dockerfile
+            file: ./udagram-api-feed/Dockerfile
             push: true
             tags: ${{ secrets.DOCKERHUB_UNAME }}/udagram-api-feed-two:v1
             cache-from: type=registry,ref=${{ secrets.DOCKERHUB_UNAME }}/udagram_api_feed-two:buildcache
