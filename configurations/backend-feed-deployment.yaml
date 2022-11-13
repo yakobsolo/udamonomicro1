@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: backend-feed
-          image: jacoba4/udagram-api-feed-two
+          image: jacoba4/udagram-api-feed-two:v1
           imagePullPolicy: Always
           ports:
             - containerPort: 8080

@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: reverseproxy
-          image: jacoba4/reverseproxy-two:latest
+          image: jacoba4/reverseproxy-two:v1
           imagePullPolicy: Always
           ports:
             - containerPort: 8080

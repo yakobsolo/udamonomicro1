@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: frontend
-          image: jacoba4/udagram-frontend-two
+          image: jacoba4/udagram-frontend-two:v1
           imagePullPolicy: Always
           ports:
             - containerPort: 8080

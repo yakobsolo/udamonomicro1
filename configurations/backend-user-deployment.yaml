@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: backend-user
-          image: jacoba4/udagram-api-user-two
+          image: jacoba4/udagram-api-user-two:v1
           imagePullPolicy: Always
           ports:
             - containerPort: 8080
