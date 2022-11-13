@@ -28,7 +28,7 @@ jobs:
         docker image tag reverseproxy-two:v1 $USER/reverseproxy-two:v1
         docker push $USER/reverseproxy-two:v1
         docker image tag udagram-frontend-two:v2a $USER/udagram-frontend-two:v2a
-        docker push $USER/udagram-frontend-two
+        docker push $USER/udagram-frontend-two:v2a
         docker image tag udagram-api-user-two:v1 $USER/udagram-api-user-two:v1
         docker push $USER/udagram-api-user-two:v1
         docker image tag udagram-api-feed-two:v1 $USER/udagram-api-feed-two:v1
